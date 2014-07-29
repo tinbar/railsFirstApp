@@ -1,4 +1,22 @@
 FirstApp::Application.routes.draw do
+  resources :microposts
+
+  resources :users 
+
+  # do 
+  #   post "deactivate"
+  #   get "jim" //users_jim_path
+  # end
+
+  # match "/asdf", :controller => :users, :action => "jim"
+  # match "/asdf" => "users#jim"
+
+  # match "/asdf", :controller => :users, :action => "asdf"
+
+  # resources :tests // this makes the default routes: index, create, new, edit, show, destroy and update
+
+  # match "*path" => "users#not_found"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
